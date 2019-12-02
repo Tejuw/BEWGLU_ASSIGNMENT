@@ -1,0 +1,98 @@
+<html>
+    
+
+<body>
+
+<div class="container">
+        
+<table border="1" id="h" class="table table-dark">
+    <thead *ngFor="let data of userData">
+        <tr>
+            <td>Price</td>
+            <td>{{data.price}}</td>
+        </tr>
+        <tr>
+            <td>latestReviewDate</td>
+            <td>{{data.latestReviewDate}}</td>
+        </tr>
+        <tr>
+            <td>latestReviewDate</td>
+            <td>{{data.latestReviewDate}}</td>
+        </tr>
+        <tr>
+            <td>domain</td>
+            <td>{{data.domain}}</td>
+        </tr>
+        
+         <tr>
+            <td>imageUrl</td>
+            <td><img src="{{data.imageUrl}}" style="height:100px"/></td>
+        </tr>
+        
+         <tr>
+            <td>name</td>
+            <td>{{data.name}}</td>
+        </tr>
+        
+         <tr>
+            <td>title</td>
+            <td>{{data.title}}</td>
+        </tr>
+        
+         <tr>
+            <td>category</td>
+            <td>{{data.category}}</td>
+        </tr>
+        
+         <tr>
+            <td>productId</td>
+            <td>{{data.productId}}</td>
+        </tr>
+        
+         <tr>
+            <td>createdAt</td>
+            <td>{{data.createdAt}}</td>
+        </tr>
+        
+         <tr>
+            <td>reviewCount</td>
+            <td>{{data.reviewCount}}</td>
+        </tr>
+        
+        <tr>Top Score</tr>
+        <tr><td>Topic</td>
+            <td>Score</td>
+        </tr>
+        <tr>
+            <td>Sound Quality</td>
+            <td>4.2</td>
+        </tr>
+        <tr>
+            <td>Bass</td>
+            <td>4.2</td>
+        </tr>
+        <tr>
+            <td>Design and Build</td>
+            <td>4.2</td>
+        </tr>
+        <tr>
+            <td>Battery Backup</td>
+            <td>4.2</td>
+        </tr>
+        <tr ng-repeat=" m in topScores">
+            <td>{{m.topic}}</td>
+            <td>{{m.score}}</td>
+        </tr>
+        
+        
+        
+    </thead>
+   
+    
+</table>
+ 
+    
+</div>
+</body>
+</html>
+<router-outlet></router-outlet>
